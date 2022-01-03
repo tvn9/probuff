@@ -1,0 +1,32 @@
+// proto3 syntax 
+syntax = "proto3";
+
+// Person created by sign-up form
+message Person {
+     int32 age = 1; // age base on current year 
+     string first_name = 2;
+     string last_name = 3;
+     bytes small_picture = 4; // a small .jpg format file
+     bool is_profile_verified = 5; // number at the end of the line is tag field
+     float height = 6;
+
+     repeated string phone_numbers = 7; // repeated field allow entry of many phone numbers
+     
+     /* Enum is very important concept in proto3
+      * The first line of enum must hold a default value 
+      * The fist tag must be 0
+      */
+      enum EyeColor {
+           UNKNOWN_EYE_COLOR = 0;
+           EYE_BROWN = 1;
+           EYE_BLUE = 2;
+           EYE_GREEN = 3;
+      }
+     
+      // EyeColor is and enum as defined above
+      EyeColor eye_color = 8;
+}
+
+
+
+ 

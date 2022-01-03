@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+// Latitue and Longtitue store date for earth coordinate values (example: -33.865382, 151.192861)
+message Latitue_Longtitue {
+     double latitue = 1;
+     double longtitue = 2;
+}
