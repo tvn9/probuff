@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "5-city.proto";
+
+message Street {
+     string addr_line1 = 1;
+     City name = 2; // imported
+}
