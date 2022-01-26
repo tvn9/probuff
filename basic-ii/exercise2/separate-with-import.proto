@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "basic-ii/exercise2/separate-city.proto";
+import "basic-ii/exercise2/separate-street.proto";
+import "basic-ii/exercise2/separate-building.proto";
+
+
+// City
+message BusinessInfo {
+    City city_name = 1;
+    Street street_address = 2;
+    string country_name = 3;
+    Building building = 4;
+}

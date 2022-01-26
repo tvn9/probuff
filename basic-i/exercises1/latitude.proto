@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+// Latitude holds earth coordination value 
+message Latitude {
+   double latitude = 1; // example: -33.844433, 125.12994
+   double longitude = 2;
+}

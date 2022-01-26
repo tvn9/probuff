@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "basic-ii/exercise2/separate-city.proto";
+import "basic-ii/exercise2/separate-street.proto";
+import "basic-ii/exercise2/separate-building.proto";
+// package biz.City;
+// package biz.Street;
+// package biz.Building;
+
+// BusinessInfo
+message BusinessInfo {
+    biz.City.City city_name = 1;
+    biz.Street.Street street_address = 2;
+    string country_name = 3;
+    biz.Building.Building building = 4;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+// Day of week holds monday to sunday using enum
+enum DayOfWeek {
+   DAY_UNDEFINE = 0;
+   monday = 1;
+   tuesday = 2;
+   wednesday = 3;
+   thusday = 4;
+   friday = 5;
+   saturday = 6;
+   sunday = 7;
+}

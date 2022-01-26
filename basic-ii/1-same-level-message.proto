@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+// Person holds person name and contact information
+message Person {
+     int32 age = 1; // example: 1 - 99
+     string first_name = 2; // example: Chris with first letter in capital
+     string last_name = 3; // example: Nguyen with first letter in capital
+     bytes small_picture = 4; // a small picture in .jpg format
+     bool is_profile_verified = 5; // a boolean field with true or false 
+     float height = 6; // floating number in metter, example: 6.2
+     repeated string phone_numbers = 7; // allow multiple phone number entry
+
+     // EyeColor
+     EyeColor eye_color = 8;
+
+     // Bidth day
+     int32 Date = 9;
+     
+     // Address holds mutliple addresses 
+     repeated Address address = 10;
+   }
+   
+   /* Enum is very important concept in proto3
+   * The first line of enum must hold a default value 
+   * The fist tag must be 0
+   */
+   enum EyeColor {
+      UNKNOWN_EYE_COLOR = 0;
+      EYE_BROWN = 1;
+      EYE_BLUE = 2;
+      EYE_GREEN = 3;
+   }
+   
+  
+   
+   // Nested field Address
+   message Address {
+      // base on local city rule, enter street address as city define in string
+      string street_number = 1; 
+      string city_name = 2; 
+      string state_name = 3; // Example: CA, or California
+      string zip_code = 4; // example: 90123 for USA
+      string country = 5; // example: USA or United State
+    }
