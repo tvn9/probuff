@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "basic-ii/3-date.proto";
+;import "basic-ii/3-date.proto";
 
 // Person holds person name and contact information
 message Person {

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+// package my.date;
+
+// Date hold year, month, and day
+message Date {
+  int32 year = 1;  // must be whole number from 1-9999
+  int32 month = 2; // must start from 1-12
+  int32 day = 3;   // must be 1-31
+}

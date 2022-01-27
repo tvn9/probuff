@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package biz.City;
+
+message City {
+    string city_name = 1;
+    string city_zip = 2;
+    string country = 3;
+}

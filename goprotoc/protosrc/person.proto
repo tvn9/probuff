@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+// Person holds person's full name address, email and phone numbers
+message Person {
+    string first_name = 1;
+    string last_name = 2;
+    string street_addr = 3;
+    string city_name = 4;
+    string zip_code = 5;
+    string country = 6;
+    repeated string phone_num = 7;
+}
